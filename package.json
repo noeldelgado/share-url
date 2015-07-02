@@ -1,0 +1,38 @@
+{
+  "name": "share-url",
+  "version": "1.0.0",
+  "description": "Generates Social Sharing Url Strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js",
+    "neon/index.js"
+  ],
+  "author": {
+    "name": "Noel Delgado",
+    "email": "auhcsei@gmail.com",
+    "url": "http://pixelia.me"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noeldelgado/share-url.git"
+  },
+  "keywords": [
+    "share",
+    "url",
+    "generator",
+    "social",
+    "sharing"
+  ],
+  "bugs": {
+    "url": "https://github.com/noeldelgado/share-url/issues"
+  },
+  "homepage": "https://github.com/noeldelgado/share-url#readme"
+}
