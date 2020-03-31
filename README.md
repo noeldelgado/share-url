@@ -35,7 +35,7 @@ ShareUrl.facebook(config);
 ```
 
 ### twitter
-https://dev.twitter.com/web/tweet-button/parameters
+https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/parameter-reference1
 
 ```js
 var config = {
@@ -52,22 +52,8 @@ ShareUrl.twitter(config);
 => 'https://twitter.com/share?text=custom%20share%20text&in_reply_to=471716611724812288&url=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&hashtags=example%2Cdemo&via=twitterdev&related=twitterapi%2Ctwitter'
 ```
 
-### google+
-https://developers.google.com/+/web/share/
-
-
-```js
-var config = {
-	url: 'http://google.com'
-};
-
-ShareUrl.googlePlus(config);
-
-=> 'https://plus.google.com/share?url=http%3A%2F%2Fgoogle.com'
-```
-
 ### pinterest
-https://developers.pinterest.com/pin_it/
+https://developers.pinterest.com/docs/widgets/save/
 
 ```js
 var config = {
@@ -94,20 +80,6 @@ var config = {
 ShareUrl.reddit(config);
 
 => 'http://www.reddit.com/submit?url=%2F%2Fwww.reddit.com%2Fbuttons&title=Buttons!'
-```
-
-### delicious
-https://delicious.com/tools
-
-```js
-var config = {
-	url : 'https://delicious.com/tools',
-	title : 'Delicious'
-};
-
-ShareUrl.delicious(config);
-
-=> 'https://delicious.com/save?url=https%3A%2F%2Fdelicious.com%2Ftools&title=Delicious'
 ```
 
 ### linkedin
@@ -141,6 +113,34 @@ var config = {
 ShareUrl.email(config);
 
 => 'mailto:nowhere@mozilla.org?cc=nobody%40mozilla.org&subject=This%20is%20the%20subject&body=This%20is%20the%20body%20-%20https%3A%2F%2Fdeveloper.mozilla.org%2F'
+```
+
+### ~~google+~~
+~~https://developers.google.com/+/web/share/~~
+
+
+```js
+var config = {
+	url: 'http://google.com'
+};
+
+ShareUrl.googlePlus(config);
+
+=> 'https://plus.google.com/share?url=http%3A%2F%2Fgoogle.com'
+```
+
+### ~~delicious~~
+~~https://delicious.com/tools~~
+
+```js
+var config = {
+	url : 'https://delicious.com/tools',
+	title : 'Delicious'
+};
+
+ShareUrl.delicious(config);
+
+=> 'https://delicious.com/save?url=https%3A%2F%2Fdelicious.com%2Ftools&title=Delicious'
 ```
 
 ## License
