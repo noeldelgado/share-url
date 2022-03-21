@@ -66,13 +66,9 @@ describe('Delicious', function() {
 
 describe('Linkedin', function() {
   it('', function() {
-    const u = 'https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fdeveloper.linkedin.com&title=LinkedIn%20Developer%20Network&summary=My%20favorite%20developer%20program&source=LinkedIn';
+    const u = 'https://linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Fdeveloper.linkedin.com';
     assert(shareUrl.linkedin({
-      mini : true,
       url : 'http://developer.linkedin.com',
-      title : 'LinkedIn Developer Network',
-      summary : 'My favorite developer program',
-      source : 'LinkedIn'
     }) === u);
   });
 });

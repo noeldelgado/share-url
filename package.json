@@ -1,6 +1,6 @@
 {
   "name": "share-url",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Generates Social Sharing Url Strings",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,10 @@
   },
   "files": [
     "index.js",
-    "neon/index.js"
+    "neon/index.js",
+    "index.d.ts"
   ],
+  "types": "index.d.ts",
   "author": {
     "name": "Noel Delgado",
     "email": "auhcsei@gmail.com",

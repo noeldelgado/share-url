@@ -7,7 +7,7 @@ Module('ShareUrl')({
             pinterest   : 'https://pinterest.com/pin/create/button/?',
             reddit      : 'http://www.reddit.com/submit?',
             delicious   : 'https://delicious.com/save?',
-            linkedin    : 'https://www.linkedin.com/shareArticle?'
+            linkedin    : 'https://linkedin.com/sharing/share-offsite/?'
         },
 
         _generateUrlParams : function _generateUrlParams(data) {
