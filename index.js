@@ -1,5 +1,5 @@
 /**
- * share-url v1.0.0
+ * share-url v1.1.0
  * @link https://github.com/noeldelgado/share-url
  * @license MIT
  */
