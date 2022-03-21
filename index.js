@@ -84,6 +84,7 @@
    * @argument data [Object] <required>
    * @argument data.url <required>
    * @argument data.title <optional>
+   * @argument data.text <optional>
    * @info http://www.reddit.com/buttons/
    * @return url
    */
