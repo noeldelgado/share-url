@@ -8,8 +8,10 @@
   },
   "files": [
     "index.js",
-    "neon/index.js"
+    "neon/index.js",
+    "index.d.ts"
   ],
+  "types": "index.d.ts",
   "author": {
     "name": "Noel Delgado",
     "email": "auhcsei@gmail.com",
