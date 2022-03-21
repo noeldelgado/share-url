@@ -106,10 +106,6 @@
   /* Compose the share article on linkedin url string.
    * @argument data [Object] <required>
    * @argument data.url [String, 1024] <required> The url-encoded URL of the page that you wish to share.
-   * @argument data.mini [Boolean] <required> A required argument who's value must always be: true
-   * @argument title [String, 200] <optional> The url-encoded title value that you wish you use.
-   * @argument summary [String, 256] <optional> The url-encoded description that you wish you use.
-   * @argument source [String, 200] <optional> The url-encoded source of the content (e.g. your website or application name)
    * @info https://developer.linkedin.com/docs/share-on-linkedin
    * @return url
    */
