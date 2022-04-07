@@ -28,6 +28,15 @@ declare module 'share-url' {
     url: string
   }
 
+  export type WhatsappOptions = {
+    text: string
+  }
+
+  export type TelegramOptions = {
+    url: string
+    text?: string
+  }
+
   export type EmailOptions = {
     to: string
     subject?: string
