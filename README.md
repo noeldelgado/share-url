@@ -123,19 +123,5 @@ ShareUrl.email(config);
 => 'mailto:nowhere@mozilla.org?cc=nobody%40mozilla.org&subject=This%20is%20the%20subject&body=This%20is%20the%20body%20-%20https%3A%2F%2Fdeveloper.mozilla.org%2F'
 ```
 
-### ~~google+~~
-~~https://developers.google.com/+/web/share/~~
-
-
-```js
-var config = {
-	url: 'http://google.com'
-};
-
-ShareUrl.googlePlus(config);
-
-=> 'https://plus.google.com/share?url=http%3A%2F%2Fgoogle.com'
-```
-
 ## License
 MIT © [Noel Delgado](http://pixelia.me/)

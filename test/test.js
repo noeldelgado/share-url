@@ -34,15 +34,6 @@ describe('Twitter', function() {
   });
 });
 
-describe('Google+', function() {
-  it('Compose the share on google+ url string.', function() {
-    const u = 'https://plus.google.com/share?url=http%3A%2F%2Fgoogle.com';
-    assert(shareUrl.googlePlus({
-      url: 'http://google.com'
-    }) === u);
-  });
-});
-
 describe('Pinterest', function() {
   it('Compose the share on pinterest url string.', function() {
     const u = 'https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20Stop%20Pinterest';

@@ -10,7 +10,6 @@
   var ENDPOINTS = {
     facebook    : 'https://www.facebook.com/sharer/sharer.php?',
     twitter     : 'https://twitter.com/share?',
-    googlePlus  : 'https://plus.google.com/share?',
     pinterest   : 'https://pinterest.com/pin/create/button/?',
     reddit      : 'http://www.reddit.com/submit?',
     linkedin    : 'https://linkedin.com/sharing/share-offsite/?',
@@ -20,7 +19,6 @@
   return {
     facebook    : facebook,
     twitter     : twitter,
-    googlePlus  : googlePlus,
     pinterest   : pinterest,
     reddit      : reddit,
     linkedin    : linkedin,
@@ -65,16 +63,6 @@
    */
   function twitter(data) {
     return ENDPOINTS.twitter + _generateUrlParams(data);
-  }
-
-  /* Compose the share on google+ url string.
-   * @argument data [Object] <required>
-   * @argument data.url [String] <required> The URL of the page to share.
-   * @info https://developers.google.com/+/web/share/
-   * @return url
-   */
-  function googlePlus(data) {
-    return ENDPOINTS.googlePlus + _generateUrlParams(data);
   }
 
   /* Compose the share on pinterest url string.
