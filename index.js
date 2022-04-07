@@ -13,7 +13,6 @@
     googlePlus  : 'https://plus.google.com/share?',
     pinterest   : 'https://pinterest.com/pin/create/button/?',
     reddit      : 'http://www.reddit.com/submit?',
-    delicious   : 'https://delicious.com/save?',
     linkedin    : 'https://linkedin.com/sharing/share-offsite/?',
     whatsapp    : 'https://wa.me/?',
   };
@@ -24,7 +23,6 @@
     googlePlus  : googlePlus,
     pinterest   : pinterest,
     reddit      : reddit,
-    delicious   : delicious,
     linkedin    : linkedin,
     whatsapp    : whatsapp,
     email       : email
@@ -48,6 +46,7 @@
   /* Compose the share on whatsapp url string
    * @argument data [Object] <required>
    * @argument data.text [String] <required>
+   * @return url
    */
   function whatsapp(data) {
     return ENDPOINTS.whatsapp + _generateUrlParams(data);
@@ -100,17 +99,6 @@
    */
   function reddit(data) {
     return ENDPOINTS.reddit + _generateUrlParams(data);
-  }
-
-  /* Compose the url string to post on delicious.
-   * @argument data [Object] <required>
-   * @argument url [String] <required>
-   * @argument title [String] <optional>
-   * @info https://delicious.com/tools
-   * @return url
-   */
-  function delicious(data) {
-    return ENDPOINTS.delicious + _generateUrlParams(data);
   }
 
   /* Compose the share article on linkedin url string.

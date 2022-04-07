@@ -64,16 +64,6 @@ describe('Reddit', function() {
   });
 });
 
-describe('Delicious', function() {
-  it('Compose the url string to post on delicious.', function() {
-    const u = 'https://delicious.com/save?url=https%3A%2F%2Fdelicious.com%2Ftools&title=Delicious';
-    assert(shareUrl.delicious({
-      url : 'https://delicious.com/tools',
-      title : 'Delicious'
-    }) === u);
-  });
-});
-
 describe('Linkedin', function() {
   it('', function() {
     const u = 'https://linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Fdeveloper.linkedin.com';

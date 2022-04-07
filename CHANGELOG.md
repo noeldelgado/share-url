@@ -4,6 +4,7 @@
 
 ### Removed
 - neon module
+- delicious
 
 ### Added
 - whatsapp support

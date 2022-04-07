@@ -137,19 +137,5 @@ ShareUrl.googlePlus(config);
 => 'https://plus.google.com/share?url=http%3A%2F%2Fgoogle.com'
 ```
 
-### ~~delicious~~
-~~https://delicious.com/tools~~
-
-```js
-var config = {
-	url : 'https://delicious.com/tools',
-	title : 'Delicious'
-};
-
-ShareUrl.delicious(config);
-
-=> 'https://delicious.com/save?url=https%3A%2F%2Fdelicious.com%2Ftools&title=Delicious'
-```
-
 ## License
 MIT © [Noel Delgado](http://pixelia.me/)
