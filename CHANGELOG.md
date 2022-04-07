@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+### Removed
+- neon module
+
 ### Added
 - whatsapp support
 

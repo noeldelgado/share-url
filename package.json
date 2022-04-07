@@ -8,7 +8,6 @@
   },
   "files": [
     "index.js",
-    "neon/index.js",
     "index.d.ts"
   ],
   "types": "index.d.ts",
