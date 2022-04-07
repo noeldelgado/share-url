@@ -46,6 +46,19 @@ ShareUrl.whatsapp(config);
 => 'https://wa.me/?text=Check%20out%20https%3A%2F%2Fgoogle.com'
 ```
 
+### telegram
+
+```js
+var config = {
+ url: 'https://google.com'
+ text: 'Check out'
+};
+
+ShareUrl.telegram(config);
+
+=> https://t.me/share/url?url=https%3A%2F%2Fgoogle.com&text=Check%20out
+```
+
 ### twitter
 https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/parameter-reference1
 

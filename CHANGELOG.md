@@ -8,7 +8,8 @@
 - google+
 
 ### Added
-- whatsapp support
+- whatsapp
+- telegram
 
 ## [1.1.0] - [#3](https://github.com/noeldelgado/share-url/pull/3) 2022-03-21
 ### Added

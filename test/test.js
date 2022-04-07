@@ -19,6 +19,15 @@ describe('Whatsapp', function() {
   });
 });
 
+describe('Telegram', function() {
+  it('Compose the share on telegram url string.', function() {
+    const u = 'https://t.me/share/url?url=https%3A%2F%2Fgoogle.com&text=Check%20out';
+    assert(shareUrl.telegram({
+      url: 'https://google.com',
+      text: 'Check out'
+    }) === u);
+  });
+});
 
 describe('Twitter', function() {
   it('Compose the share on twitter url string.', function() {

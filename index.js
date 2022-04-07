@@ -14,6 +14,7 @@
     reddit      : 'http://www.reddit.com/submit?',
     linkedin    : 'https://linkedin.com/sharing/share-offsite/?',
     whatsapp    : 'https://wa.me/?',
+    telegram    : 'https://t.me/share/url?',
   };
 
   return {
@@ -23,6 +24,7 @@
     reddit      : reddit,
     linkedin    : linkedin,
     whatsapp    : whatsapp,
+    telegram    : telegram,
     email       : email
   };
 
@@ -48,6 +50,16 @@
    */
   function whatsapp(data) {
     return ENDPOINTS.whatsapp + _generateUrlParams(data);
+  }
+
+  /* Compose the share on telegram url string
+   * @argument data [Object] <required>
+   * @argument data.url [String] <required>
+   * @argument data.text [String] <optional>
+   * @return url
+   */
+  function telegram(data) {
+    return ENDPOINTS.telegram + _generateUrlParams(data);
   }
 
   /* Compose the share on twitter url string.
