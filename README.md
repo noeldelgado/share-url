@@ -34,6 +34,18 @@ ShareUrl.facebook(config);
 => 'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgoogle.com'
 ```
 
+### whatsapp
+
+```js
+var config = {
+ text : 'Check out http://google.com'
+};
+
+ShareUrl.whatsapp(config);
+
+=> 'https://wa.me/?text=Check%20out%20https%3A%2F%2Fgoogle.com'
+```
+
 ### twitter
 https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/parameter-reference1
 

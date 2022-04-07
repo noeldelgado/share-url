@@ -14,7 +14,8 @@
     pinterest   : 'https://pinterest.com/pin/create/button/?',
     reddit      : 'http://www.reddit.com/submit?',
     delicious   : 'https://delicious.com/save?',
-    linkedin    : 'https://linkedin.com/sharing/share-offsite/?'
+    linkedin    : 'https://linkedin.com/sharing/share-offsite/?',
+    whatsapp    : 'https://wa.me/?',
   };
 
   return {
@@ -25,6 +26,7 @@
     reddit      : reddit,
     delicious   : delicious,
     linkedin    : linkedin,
+    whatsapp    : whatsapp,
     email       : email
   };
 
@@ -41,6 +43,14 @@
    */
   function facebook(data) {
     return ENDPOINTS.facebook + _generateUrlParams(data);
+  }
+
+  /* Compose the share on whatsapp url string
+   * @argument data [Object] <required>
+   * @argument data.text [String] <required>
+   */
+  function whatsapp(data) {
+    return ENDPOINTS.whatsapp + _generateUrlParams(data);
   }
 
   /* Compose the share on twitter url string.

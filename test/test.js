@@ -10,6 +10,16 @@ describe('Facebook', function() {
   });
 });
 
+describe('Whatsapp', function() {
+  it('Compose the share on whatsapp url string.', function() {
+    const u = 'https://wa.me/?text=Check%20out%20https%3A%2F%2Fgoogle.com';
+    assert(shareUrl.whatsapp({
+      text: 'Check out https://google.com'
+    }) === u);
+  });
+});
+
+
 describe('Twitter', function() {
   it('Compose the share on twitter url string.', function() {
     const u = 'https://twitter.com/share?text=custom%20share%20text&in_reply_to=471716611724812288&url=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&hashtags=example%2Cdemo&via=twitterdev&related=twitterapi%2Ctwitter';
