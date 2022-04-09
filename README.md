@@ -42,6 +42,7 @@ const ShareUrl = require('share-url');
 ```
 
 ### facebook
+https://developers.facebook.com/docs/plugins/share-button/
 
 ```js
 ShareUrl.facebook({
@@ -51,6 +52,7 @@ ShareUrl.facebook({
 ```
 
 ### whatsapp
+https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat
 
 ```js
 ShareUrl.whatsapp({
@@ -60,6 +62,7 @@ ShareUrl.whatsapp({
 ```
 
 ### telegram
+https://core.telegram.org/widgets/share#custom-buttons
 
 ```js
 ShareUrl.telegram({
