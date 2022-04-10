@@ -18,6 +18,7 @@
   };
 
   return {
+    VERSION     : '1.1.0',
     facebook    : facebook,
     twitter     : twitter,
     pinterest   : pinterest,
