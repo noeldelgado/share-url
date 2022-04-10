@@ -71,13 +71,13 @@ ShareUrl.facebook({
 https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat
 
 ```
-https://wa.me/?text={text}
+https://api.whatsapp.com/send?text={text}
 ```
 ```js
 ShareUrl.whatsapp({
   text: 'Check out http://google.com',
 });
-// => 'https://wa.me/?text=Check%20out%20https%3A%2F%2Fgoogle.com'
+// => 'https://api.whatsapp.com/send?text=Check%20out%20https%3A%2F%2Fgoogle.com'
 ```
 
 ### telegram
