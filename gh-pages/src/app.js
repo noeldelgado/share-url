@@ -45,12 +45,12 @@ internals.outputs = [
 internals.content = (url) => `${url} <a href="${url}" rel="noopener noreferrer" target="_blank">Test</a>`;
 
 internals.updateOutputs = (val) => {
-  const u = url = text = val;
-
+  let u, url, text;
+  u = url = text = val;
   internals.outputs.forEach((o) => {
     o.el.innerHTML = internals.content(
       o.method(
-        o.options ? o.options({ u, url, text }) : { url }
+        o.options?.({ u, url, text }) ?? { url }
       )
     );
   });
