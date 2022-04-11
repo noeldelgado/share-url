@@ -5,7 +5,7 @@
   "scripts": {
     "start": "parcel src/index.pug",
     "prebuild": "rm -rf ../docs",
-    "build": "parcel build src/index.pug --dist-dir ../docs --public-url ./"
+    "build": "parcel build src/index.pug --dist-dir ../docs --public-url ./ --no-cache"
   },
   "devDependencies": {
     "@parcel/transformer-pug": "^2.4.1",
