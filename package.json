@@ -1,7 +1,7 @@
 {
   "name": "share-url",
-  "version": "1.1.0",
-  "description": "Generates Social Sharing Url Strings",
+  "version": "1.2.0",
+  "description": "Generates social sharing url strings",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
