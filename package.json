@@ -4,7 +4,8 @@
   "description": "Generates social sharing url strings",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build-www": "cd gh-pages && npm run build"
   },
   "files": [
     "index.js",
@@ -13,8 +14,8 @@
   "types": "index.d.ts",
   "author": {
     "name": "Noel Delgado",
-    "email": "auhcsei@gmail.com",
-    "url": "http://pixelia.me"
+    "email": "pixelia.me@gmail.com",
+    "url": "https://pixelia.me"
   },
   "license": "MIT",
   "devDependencies": {
