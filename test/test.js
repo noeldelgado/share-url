@@ -10,6 +10,25 @@ describe('Facebook', function() {
   });
 });
 
+describe('Whatsapp', function() {
+  it('Compose the share on whatsapp url string.', function() {
+    const u = 'https://api.whatsapp.com/send?text=Check%20out%20https%3A%2F%2Fgoogle.com';
+    assert(shareUrl.whatsapp({
+      text: 'Check out https://google.com'
+    }) === u);
+  });
+});
+
+describe('Telegram', function() {
+  it('Compose the share on telegram url string.', function() {
+    const u = 'https://t.me/share/url?url=https%3A%2F%2Fgoogle.com&text=Check%20out';
+    assert(shareUrl.telegram({
+      url: 'https://google.com',
+      text: 'Check out'
+    }) === u);
+  });
+});
+
 describe('Twitter', function() {
   it('Compose the share on twitter url string.', function() {
     const u = 'https://twitter.com/share?text=custom%20share%20text&in_reply_to=471716611724812288&url=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&hashtags=example%2Cdemo&via=twitterdev&related=twitterapi%2Ctwitter';
@@ -20,15 +39,6 @@ describe('Twitter', function() {
       hashtags: 'example,demo',
       via: 'twitterdev',
       related: 'twitterapi,twitter'
-    }) === u);
-  });
-});
-
-describe('Google+', function() {
-  it('Compose the share on google+ url string.', function() {
-    const u = 'https://plus.google.com/share?url=http%3A%2F%2Fgoogle.com';
-    assert(shareUrl.googlePlus({
-      url: 'http://google.com'
     }) === u);
   });
 });
@@ -50,16 +60,6 @@ describe('Reddit', function() {
     assert(shareUrl.reddit({
       url : '//www.reddit.com/buttons',
       title : 'Buttons!'
-    }) === u);
-  });
-});
-
-describe('Delicious', function() {
-  it('Compose the url string to post on delicious.', function() {
-    const u = 'https://delicious.com/save?url=https%3A%2F%2Fdelicious.com%2Ftools&title=Delicious';
-    assert(shareUrl.delicious({
-      url : 'https://delicious.com/tools',
-      title : 'Delicious'
     }) === u);
   });
 });

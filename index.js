@@ -1,5 +1,5 @@
 /**
- * share-url v1.1.0
+ * share-url v1.2.0
  * @link https://github.com/noeldelgado/share-url
  * @license MIT
  */
@@ -10,22 +10,23 @@
   var ENDPOINTS = {
     facebook    : 'https://www.facebook.com/sharer/sharer.php?',
     twitter     : 'https://twitter.com/share?',
-    googlePlus  : 'https://plus.google.com/share?',
     pinterest   : 'https://pinterest.com/pin/create/button/?',
     reddit      : 'http://www.reddit.com/submit?',
-    delicious   : 'https://delicious.com/save?',
-    linkedin    : 'https://linkedin.com/sharing/share-offsite/?'
+    linkedin    : 'https://linkedin.com/sharing/share-offsite/?',
+    whatsapp    : 'https://api.whatsapp.com/send?',
+    telegram    : 'https://t.me/share/url?',
   };
 
   return {
+    VERSION     : '1.2.0',
     facebook    : facebook,
     twitter     : twitter,
-    googlePlus  : googlePlus,
     pinterest   : pinterest,
     reddit      : reddit,
-    delicious   : delicious,
     linkedin    : linkedin,
-    email       : email
+    whatsapp    : whatsapp,
+    telegram    : telegram,
+    email       : email,
   };
 
   function _generateUrlParams(data) {
@@ -43,6 +44,25 @@
     return ENDPOINTS.facebook + _generateUrlParams(data);
   }
 
+  /* Compose the share on whatsapp url string
+   * @argument data [Object] <required>
+   * @argument data.text [String] <required>
+   * @return url
+   */
+  function whatsapp(data) {
+    return ENDPOINTS.whatsapp + _generateUrlParams(data);
+  }
+
+  /* Compose the share on telegram url string
+   * @argument data [Object] <required>
+   * @argument data.url [String] <required>
+   * @argument data.text [String] <optional>
+   * @return url
+   */
+  function telegram(data) {
+    return ENDPOINTS.telegram + _generateUrlParams(data);
+  }
+
   /* Compose the share on twitter url string.
    * @argument data [Object] <required>
    * @argument data.text [String] <optional> Pre-populated text highlighted in the Tweet composer.
@@ -56,16 +76,6 @@
    */
   function twitter(data) {
     return ENDPOINTS.twitter + _generateUrlParams(data);
-  }
-
-  /* Compose the share on google+ url string.
-   * @argument data [Object] <required>
-   * @argument data.url [String] <required> The URL of the page to share.
-   * @info https://developers.google.com/+/web/share/
-   * @return url
-   */
-  function googlePlus(data) {
-    return ENDPOINTS.googlePlus + _generateUrlParams(data);
   }
 
   /* Compose the share on pinterest url string.
@@ -90,17 +100,6 @@
    */
   function reddit(data) {
     return ENDPOINTS.reddit + _generateUrlParams(data);
-  }
-
-  /* Compose the url string to post on delicious.
-   * @argument data [Object] <required>
-   * @argument url [String] <required>
-   * @argument title [String] <optional>
-   * @info https://delicious.com/tools
-   * @return url
-   */
-  function delicious(data) {
-    return ENDPOINTS.delicious + _generateUrlParams(data);
   }
 
   /* Compose the share article on linkedin url string.
