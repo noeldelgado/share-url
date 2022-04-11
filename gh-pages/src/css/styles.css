@@ -107,7 +107,6 @@ section {
 #demo [data-demo-output] {
   font-size: .85rem;
   word-break: break-word;
-  color: rgba(0 0 0 / .5);
 }
 
 #demo [data-demo-output] a {
