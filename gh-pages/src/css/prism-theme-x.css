@@ -3,7 +3,7 @@
 }
 
 .theme-x .token.keyword {
-  color: fuchsia;
+  color: #cf00cf;
   font-weight: bolder;
 }
 .theme-x .token.function {
