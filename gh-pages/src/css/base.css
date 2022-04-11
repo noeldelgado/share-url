@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-size: 16px;
+  --line-height: 1.618;
+  --font-family: system-ui;
+  --font-mono: monospace;
+  --color-background: #fff;
+  --color-text: #2a2a2a;
+  --color-link: blue;
+  --color-border: var(--color-text);
+  --color-code: fuchsia;
+  --radius: 4px;
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: var(--color-link);
+}
+
+main {
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h1, h2 {
+  line-height: normal;
+}
+
+pre, code {
+  font-family: var(--font-mono);
+  color: var(--color-code);
+}
+
+pre {
+  overflow: auto;
+}
+
+
+svg {
+  fill: currentColor;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+}
+
+input,
+button {
+  font-size: inherit;
+  font-family: inherit;
+  min-width: 1cm;
+  min-height: 1cm;
+  border-radius: var(--radius);
+  border: 0.125em solid var(--color-text);
+}
+
+button {
+  background-color: var(--color-text);
+  color: var(--color-background);
+}
