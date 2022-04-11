@@ -10,7 +10,7 @@
 
 Generates social sharing urls without downloading its third party scripts. Adaptable to any UI.
 
-**Supported:** [Facebook](#facebook), [Twitter](#twitter), [Telegram](#telegram), [Whatsapp](#whatsapp), [Pinterest](#pinteres), [Reddit](#reddit), [Linkedin](#linkedin), [e-mail].(#email)
+**Supported:** [Facebook](#facebook), [Twitter](#twitter), [Telegram](#telegram), [Whatsapp](#whatsapp), [Pinterest](#pinteres), [Reddit](#reddit), [Linkedin](#linkedin), [e-mail](#email).
 
 ## Demo
 https://noeldelgado.github.io/share-url/
@@ -45,7 +45,7 @@ Or as a `<script>` tag from a CDN as `ShareUrl`:
 ```jsx
 // jsx
 <a href={ShareUrl.facebook({ u: 'https://google.com' }}>
-	Share on Facebook
+  Share on Facebook
 </a>
 ```
 ```js
@@ -54,11 +54,8 @@ document.querySelector('a').href = ShareUrl.facebook({ u: 'https://google.com' }
 ```
 
 ### facebook
-https://developers.facebook.com/docs/plugins/share-button/
-
-```
-https://www.facebook.com/sharer.php?u={url}
-```
+[Source](https://developers.facebook.com/docs/plugins/share-button/)
+`https://www.facebook.com/sharer.php?u={url}`
 
 ```js
 ShareUrl.facebook({
@@ -68,11 +65,9 @@ ShareUrl.facebook({
 ```
 
 ### whatsapp
-https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat
+[Source](https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat)
+`https://api.whatsapp.com/send?text={text}`
 
-```
-https://api.whatsapp.com/send?text={text}
-```
 ```js
 ShareUrl.whatsapp({
   text: 'Check out http://google.com',
@@ -81,11 +76,8 @@ ShareUrl.whatsapp({
 ```
 
 ### telegram
-https://core.telegram.org/widgets/share#custom-buttons
-
-```
-https://t.me/share/url?url={url}&text={text}
-```
+[Source](https://core.telegram.org/widgets/share#custom-buttons)
+`https://t.me/share/url?url={url}&text={text}`
 
 ```js
 ShareUrl.telegram({
@@ -96,11 +88,8 @@ ShareUrl.telegram({
 ```
 
 ### twitter
-https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/parameter-reference1
-
-```
-https://twitter.com/share?text={text}&url={url}
-```
+[Source](https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/parameter-reference1)
+`https://twitter.com/share?text={text}&url={url}`
 
 ```js
 ShareUrl.twitter({
@@ -115,11 +104,8 @@ ShareUrl.twitter({
 ```
 
 ### pinterest
-https://developers.pinterest.com/docs/widgets/save/
-
-```
-https://pinterest.com/pin/create/button/?url={url}
-```
+[Source](https://developers.pinterest.com/docs/widgets/save/)
+`https://pinterest.com/pin/create/button/?url={url}`
 
 ```js
 ShareUrl.pinterest({
@@ -132,11 +118,8 @@ ShareUrl.pinterest({
 ```
 
 ### reddit
-http://www.reddit.com/buttons/
-
-```
-http://www.reddit.com/submit?url={url}
-```
+[Source](http://www.reddit.com/buttons/)
+`http://www.reddit.com/submit?url={url}`
 
 ```js
 ShareUrl.reddit({
@@ -147,11 +130,8 @@ ShareUrl.reddit({
 ```
 
 ### linkedin
-https://developer.linkedin.com/docs/share-on-linkedin
-
-```
-https://linkedin.com/sharing/share-offsite/?url={url}
-```
+[Source](https://developer.linkedin.com/docs/share-on-linkedin)
+`https://linkedin.com/sharing/share-offsite/?url={url}`
 
 ```js
 ShareUrl.linkedin({
@@ -161,11 +141,8 @@ ShareUrl.linkedin({
 ```
 
 ### email
-https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Email_links
-
-```
-mailto:{to}?subject={subject}&body={body}
-```
+[Source](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Email_links)
+`mailto:{to}?subject={subject}&body={body}`
 
 ```js
 ShareUrl.email({
