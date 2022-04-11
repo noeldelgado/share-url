@@ -12,7 +12,7 @@ describe('Facebook', function() {
 
 describe('Whatsapp', function() {
   it('Compose the share on whatsapp url string.', function() {
-    const u = 'https://wa.me/?text=Check%20out%20https%3A%2F%2Fgoogle.com';
+    const u = 'https://api.whatsapp.com/send?text=Check%20out%20https%3A%2F%2Fgoogle.com';
     assert(shareUrl.whatsapp({
       text: 'Check out https://google.com'
     }) === u);

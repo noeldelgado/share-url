@@ -13,11 +13,12 @@
     pinterest   : 'https://pinterest.com/pin/create/button/?',
     reddit      : 'http://www.reddit.com/submit?',
     linkedin    : 'https://linkedin.com/sharing/share-offsite/?',
-    whatsapp    : 'https://wa.me/?',
+    whatsapp    : 'https://api.whatsapp.com/send?',
     telegram    : 'https://t.me/share/url?',
   };
 
   return {
+    VERSION     : '1.1.0',
     facebook    : facebook,
     twitter     : twitter,
     pinterest   : pinterest,
@@ -25,7 +26,7 @@
     linkedin    : linkedin,
     whatsapp    : whatsapp,
     telegram    : telegram,
-    email       : email
+    email       : email,
   };
 
   function _generateUrlParams(data) {

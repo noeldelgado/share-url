@@ -1,0 +1,15 @@
+{
+  "name": "gh-pages",
+  "private": true,
+  "description": "share-url lib homepage",
+  "scripts": {
+    "start": "parcel src/index.pug",
+    "prebuild": "rm -rf ../docs",
+    "build": "parcel build src/index.pug --dist-dir ../docs"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.4.1",
+    "parcel": "^2.4.1",
+    "prismjs": "^1.27.0"
+  }
+}

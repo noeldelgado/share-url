@@ -1,0 +1,14 @@
+.theme-x {
+  color: black;
+}
+
+.theme-x .token.keyword {
+  color: fuchsia;
+  font-weight: bolder;
+}
+.theme-x .token.function {
+  color: #0070f3;
+}
+.theme-x .token.string {
+  color: #4caf50;
+}
