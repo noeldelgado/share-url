@@ -1,5 +1,5 @@
 /**
- * share-url v1.1.0
+ * share-url v1.2.0
  * @link https://github.com/noeldelgado/share-url
  * @license MIT
  */
@@ -18,7 +18,7 @@
   };
 
   return {
-    VERSION     : '1.1.0',
+    VERSION     : '1.2.0',
     facebook    : facebook,
     twitter     : twitter,
     pinterest   : pinterest,
