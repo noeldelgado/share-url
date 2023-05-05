@@ -44,7 +44,7 @@ Or as a `<script>` tag from a CDN as `ShareUrl`:
 
 ```jsx
 // jsx
-<a href={ShareUrl.facebook({ u: 'https://google.com' }}>
+<a href={ShareUrl.facebook({ u: 'https://google.com' })}>
   Share on Facebook
 </a>
 ```
